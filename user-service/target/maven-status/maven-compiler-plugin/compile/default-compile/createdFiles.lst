@@ -1,0 +1,6 @@
+org\example\user\service\UserService.class
+org\example\user\mapper\UserMapper.class
+org\example\user\service\impl\UserServiceImpl.class
+org\example\user\pojo\User.class
+org\example\user\UserApplication.class
+org\example\user\controller\UserController.class
