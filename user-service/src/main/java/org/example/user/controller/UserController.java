@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.websocket.server.PathParam;
+import java.util.List;
 
 @Controller
 @RequestMapping("/user")
@@ -24,5 +25,11 @@ public class UserController {
 //        test.setName("test");
 //        return test;
         return userService.getUserById(id);
+    }
+
+    @GetMapping("/getAll")
+    @ResponseBody
+    public List<User> getAllUsers(){
+        return userService.getAllUsers();
     }
 }

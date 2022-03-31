@@ -1,4 +1,4 @@
-package org.example.user.pojo;
+package org.example.order.pojo;
 
 import lombok.Data;
 
@@ -6,6 +6,6 @@ import lombok.Data;
 public class User {
     private Long id;
     private String name;
-    private Integer age;
+    private int age;
     private String address;
 }

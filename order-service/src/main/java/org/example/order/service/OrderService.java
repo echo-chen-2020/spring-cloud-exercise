@@ -1,6 +1,7 @@
 package org.example.order.service;
 
 import org.example.order.pojo.Order;
+import org.example.order.pojo.UserOrders;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,5 +10,5 @@ import java.util.List;
 public interface OrderService {
     Order getOrderByOrderId(Long orderId);
 
-    List<Order> getOrdersByUserId(Long UserId);
+    UserOrders getOrdersByUserId(Long UserId);
 }

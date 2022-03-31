@@ -1,6 +1,7 @@
 package org.example.order.controller;
 
 import org.example.order.pojo.Order;
+import org.example.order.pojo.UserOrders;
 import org.example.order.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -28,5 +29,11 @@ public class OrderController {
 //        order.setCreater("test");
 //        return order;
         return orderService.getOrderByOrderId(orderId);
+    }
+
+    @GetMapping("getOrdersByUserId")
+    @ResponseBody
+    public UserOrders getOrdersByUserId(@PathParam("userId")Long userId){
+        return orderService.getOrdersByUserId(userId);
     }
 }
